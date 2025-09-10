@@ -1,1 +1,113 @@
-/* Add you CSS here */
+/* style.css - Simple, beginner-friendly styles for your portfolio website */
+
+body {
+    /* Set a clean background color */
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* Center header text and add spacing */
+    text-align: center;
+    background: #222;
+    color: #fff;
+    padding: 32px 0 16px 0;
+    /* Add a subtle shadow */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    /* Smooth fade-in animation */
+    animation: fadeIn 1.5s;
+}
+
+header h1 i {
+    /* Style the user icon */
+    color: #6ec1e4;
+    margin-right: 8px;
+}
+
+section {
+    /* Add spacing between sections */
+    margin: 24px auto;
+    max-width: 700px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(110,193,228,0.08);
+    /* Smooth fade-in animation */
+    animation: fadeIn 1.5s;
+}
+
+h2 i, h3 i {
+    /* Style icons in section titles */
+    color: #6ec1e4;
+    margin-right: 6px;
+}
+
+ul {
+    /* Remove default list style */
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    /* Add spacing between list items */
+    margin-bottom: 4px; /* Closer together */
+    /* Smooth hover effect */
+    transition: background 0.3s, transform 0.3s;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+li i {
+    /* Style icons in list items */
+    color: #6ec1e4;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+li:hover {
+    background: #eaf6ff;
+    transform: scale(1.03);
+}
+
+footer {
+    /* Footer styling */
+    text-align: center;
+    color: #888;
+    padding: 16px 0;
+    font-size: 0.9em;
+    background: #f0f4ff;
+    border-top: 1px solid #e0eafc;
+}
+
+.java-logo-spacing {
+    /* Adjust the space between the comma and the Java logo here */
+    margin-left: 8px; /* Change this value to your preferred spacing in pixels */
+}
+
+.java-spacing {
+    /* Adjust the space between the Java logo and the Java text here */
+    margin-left: 0px; /* Change this value to your preferred spacing in pixels */
+}
+
+/* Simple fade-in animation for smooth appearance */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Add comments to help you understand each part of the CSS above */
+/*
+body: Adds a gentle gradient background for a modern look.
+header: Adds a shadow and styles the icon.
+section: Adds a larger border radius and shadow for a card effect.
+h2 i, h3 i: Colors icons in section titles.
+ul, li: Styles lists, brings items closer, and adds icon styling and a hover scale effect.
+footer: Adds a top border and background color.
+.java-logo-spacing: Allows easy adjustment of spacing between the comma and the Java logo.
+.java-spacing: Allows easy adjustment of spacing between Java logo and text.
+@keyframes fadeIn: Creates a smooth fade-in animation for sections.
+*/
